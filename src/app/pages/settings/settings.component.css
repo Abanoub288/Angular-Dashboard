@@ -1,0 +1,26 @@
+input::placeholder{
+  color: #fff;
+}
+.social-boxes i {
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  padding-top: 10px;
+  border: 1px solid #ddd;
+  border-right: none;
+  border-radius: 6px 0 0 6px;
+  transition: 0.3s;
+  text-align: center;
+}
+.social-boxes label {
+  margin-left: 10px;
+  font-size: 18px;
+}
+.social-boxes input {
+  border-radius: 0 6px 6px 0;
+  height: 40px;
+  padding-left: 10px;
+}
+.social-boxes > div:focus-within i {
+  color: var(--move-color);
+}

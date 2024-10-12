@@ -1,0 +1,37 @@
+<h3 class="c-blue fs-1 mb-5 fw-bolder">Files Statistics</h3>
+  <div class="row">
+    <div class="col-lg-9 col-sm-12">
+      <div class="row">
+        <div *ngFor="let file of files" class="col-lg-3 col-md-6 col-sm-12">
+          <div class="file bg-dark c-fff mb-3">
+            <i class="fa-solid fa-download p-2 fs-5"></i>
+          <div class="text-center fs-3 mb-1 pdf">
+            <i class="fa-solid fa-file-pdf"></i>
+          </div>
+          <div class="text-center mb-2 fs-5">{{file.name}}</div>
+            <p class="m-2 fs-13">{{file.user}}</p>
+            <div class="p-2 d-flex justify-content-between align-items-center m-1">
+              <span>{{file.data}}</span>
+              <span>{{file.size}}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3 col-sm-12">
+      <div class="bg-dark p-3 files">
+        <h5 class="c-blue fs-3 fw-bolder mb-2">Files Statistics</h5>
+        <div *ngFor="let statis of Statistics" class="d-flex justify-content-between statis c-fff mb-3">
+          <i [class]="statis.icon" class="fs-2 m-1"></i>
+          <div class="m-1">
+            <span>{{statis.name}}</span>
+            <span class="d-block">{{statis.count}} Files</span>
+          </div>
+          <span class="m-1">{{statis.size}}</span>
+        </div>
+        <button class="btn bg-main c-fff fw-bolder d-block m-auto">Upload</button>
+      </div>
+    </div>
+  </div>
+
+

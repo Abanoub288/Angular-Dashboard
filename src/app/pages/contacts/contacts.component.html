@@ -1,0 +1,23 @@
+
+<h3 class="c-blue fw-bolder mt-4 fs-1">Contacts</h3>
+<p class="c-fff fw-bolder">List of Contacts for Future Reference</p>
+<div class="table-responsive">
+  <table class="c-fff table-dark table-hover table mt-2">
+    <thead class="table-black">
+      <tr>
+        <th class="text-center" *ngFor="let item of head">{{item}}</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="text-center" *ngFor="let user of users">
+        <td>{{user.regetid}}</td>
+        <td>{{user.name}}</td>
+        <td>{{user.age}}</td>
+        <td>{{user.maile}}</td>
+        <td>+20 {{user.phone}}</td>
+        <td>{{user.city}}</td>
+        <td>{{user.zip}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

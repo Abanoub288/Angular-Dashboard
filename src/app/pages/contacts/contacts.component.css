@@ -1,0 +1,7 @@
+.table  tr th,
+.table tbody tr td {
+  padding: 15px;
+}
+.table tbody tr:hover td {
+  color: var(--move-color);
+}

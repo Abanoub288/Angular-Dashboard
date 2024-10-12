@@ -1,0 +1,128 @@
+<div class="d-flex align-items-center justify-content-between head">
+  <div class="text1">
+    <h3 class="c-blue fs-1 fw-bolder">Dashboard</h3>
+    <p class="c-fff fs-5">Welcome to my dashboard</p>
+  </div>
+  <button class="btn bg-main c-fff"><i class="fa-solid fa-download"></i> DOWNLOAD PEPORTS</button>
+</div>
+<div class="row">
+  <div class="col-sm-4 mb-1">
+    <div class="card">
+      <div class="card-body d-flex align-items-center justify-content-between">
+        <div class="text2 c-fff">
+          <i class="fa-solid fa-envelope"></i>
+          <span class="d-block">10,000</span>
+          <p>Emails Sent</p>
+        </div>
+        <div>
+          <canvas style="height: 40px;" baseChart [data]="chartData" [labels]="chartData.labels" type="doughnut" [options]="chartOptions"
+            [plugins]="chartPlugins">
+          </canvas>
+          <p class="c-fff text-center mt-2">+8%</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-4 mb-1">
+    <div class="card">
+      <div class="card-body d-flex align-items-center justify-content-between">
+        <div class="text2 c-fff">
+          <i class="fa-solid fa-phone"></i>
+          <span class="d-block">431,123</span>
+          <p>Sales obtained</p>
+        </div>
+        <div>
+          <canvas style="height: 40px;" baseChart [data]="ChartData" [labels]="chartData.labels" type="doughnut"
+            [options]="chartOptions" [plugins]="chartPlugins">
+          </canvas>
+          <p class="c-fff text-center mt-2">+20%</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-4 mb-1">
+    <div class="card">
+      <div class="card-body d-flex align-items-center justify-content-between">
+        <div class="text2 c-fff">
+          <i class="fa-solid fa-user-plus fa-flip-horizontal"></i>
+          <span class="d-block">15,400</span>
+          <p>New Clients</p>
+        </div>
+        <div>
+          <canvas style="height: 40px;" baseChart [data]="Data" [labels]="chartData.labels" type="doughnut"
+            [options]="chartOptions" [plugins]="chartPlugins">
+          </canvas>
+          <p class="c-fff text-center mt-2">+8%</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-12 mt-2">
+    <div class="card">
+      <div class="card-body d-flex align-items-center justify-content-between">
+        <div class="text2 c-fff">
+          <i class="fa-solid fa-envelope"></i>
+          <span class="d-block">1,300,100</span>
+          <p>Traffic Received</p>
+        </div>
+        <div>
+          <canvas style="height: 40px;" baseChart [data]="data" [labels]="chartData.labels" type="doughnut"
+            [options]="chartOptions" [plugins]="chartPlugins">
+          </canvas>
+          <p class="c-fff text-center mt-2">+50%</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-8 mt-2">
+    <div class="card">
+      <div class="card-body">
+        <h3 class="c-blue fw-bolder">Revenue Generated</h3>
+        <canvas baseChart width="400" height="200" [type]="'line'" [data]="lineChartData" [options]="lineChartOptions"
+          [legend]="lineChartLegend">
+        </canvas>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-4 mt-2">
+    <div class="card">
+      <div class="card-body">
+        <div class="latest-uploads p-20 rad-10">
+          <h2 class="mt-0 mb-20 c-blue">Latest Uploads</h2>
+          <ul class="m-0">
+            <li class="d-flex align-items-center justify-content-between mb-3 mt-3 p-2 bg-dark">
+              <i class="fa-solid fa-file-pdf fs-3"></i>
+              <span class="d-block c-fff">my-file.pdf</span>
+              <div class="c-fff">2.9mb</div>
+            </li>
+            <li class="d-flex align-items-center justify-content-between mb-3 p-2 p-2 bg-dark">
+              <i class="fa-solid fa-file-pdf fs-3"></i>
+              <span class="d-block c-fff">My-Video-File.avi</span>
+              <div class="c-fff">4.9mb</div>
+            </li>
+            <li class="d-flex align-items-center justify-content-between mb-3 p-2 p-2 bg-dark">
+              <i class="fa-solid fa-file-pdf fs-3"></i>
+              <span class="d-block c-fff">My-Psd-File.pdf</span>
+              <div class="c-fff">4.5mb</div>
+            </li>
+            <li class="d-flex align-items-center justify-content-between mb-3 p-2 p-2 bg-dark">
+              <i class="fa-solid fa-file-pdf fs-3"></i>
+              <span class="d-block c-fff">My-Zip-File.pdf</span>
+              <div class="c-fff">8.9mb</div>
+            </li>
+            <li class="d-flex align-items-center justify-content-between mb-3 p-2 p-2 bg-dark">
+              <i class="fa-solid fa-file-pdf fs-3"></i>
+              <span class="d-block c-fff">My-DLL-File.pdf</span>
+              <div class="c-fff">4.9mb</div>
+            </li>
+            <li class="d-flex align-items-center justify-content-between p-2 p-2 bg-dark">
+              <i class="fa-solid fa-file-pdf fs-3"></i>
+              <span class="d-block c-fff">My-Eps-File.pdf</span>
+              <div class="c-fff">8.9mb</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

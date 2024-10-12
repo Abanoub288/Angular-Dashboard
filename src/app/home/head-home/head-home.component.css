@@ -1,0 +1,54 @@
+button {
+  padding: 6px 15px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+button:hover {
+  background-color: var(--blue-color);
+  color: #fff;
+}
+button i {
+  margin-right: 15px;
+}
+.card {
+  background-color: rgba(0, 0, 0, 0.194);
+  border-radius: 10px;
+  margin-right: 10px;
+  width: 100%;
+}
+.card .card-body {
+  padding: 10px 20px;
+}
+.card .card-body i {
+  color: var(--move-color);
+}
+.card .card-body i,
+.card .card-body span,
+.card .card-body p {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+.latest-uploads ul {
+  max-height: 340px;
+  overflow-y: scroll;
+}
+.latest-uploads ul li {
+  border-radius: 5px;
+}
+@media (max-width: 768px) {
+  .head {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .text1 {
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+}
